@@ -444,7 +444,7 @@ ___________________6666666________________
 ░░░░░░░░░▀▀▄▄▄▄▄▄▄▄▄▄▀
 """
 	randomnum = 1
-def spok_write():
+def spok_write(spoked):
 	if banners.randomnum == 1:
 		spoked.write(banners.spookSkele)
 		return "finished writing to file"
@@ -491,7 +491,6 @@ def spookOne(filepath):
 	if os.path.isfile(filepath):
 		banners.randomnum = randint(1,14)#random number between 1 and 14
 		spoked = open(filepath, "a", encoding='utf8')
-		global spoked
-		spok_write()
+		spok_write(spoked)
 	else:
 		return "False file path please enter a valid path"
