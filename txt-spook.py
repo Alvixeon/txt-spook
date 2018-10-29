@@ -488,9 +488,15 @@ def spok_write(spoked):
 		spoked.write(banners.face)
 		return "finished writing to file"
 def spookOne(filepath):
-	if os.path.isfile(filepath):
-		banners.randomnum = randint(1,14)#random number between 1 and 14
-		spoked = open(filepath, "a", encoding='utf8')
-		spok_write(spoked)
-	else:
-		return "False file path please enter a valid path"
+    if os.path.isfile(filepath):
+        banners.randomnum = randint(1,14)#random number between 1 and 14
+        spoked = open(filepath, "a", encoding='utf8')
+        spok_write(spoked)
+        print ("you done got spooked, doot doot")
+    else:
+        return "False file path please enter a valid path"
+        main()
+def main():
+    x = input ("Specify a filepath:")
+    spookOne(x)
+main()
