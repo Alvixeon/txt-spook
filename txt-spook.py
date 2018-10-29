@@ -1,4 +1,4 @@
-#Alvixeon 10/31/17
+#jurgehun 10/31/17
 #basically just a random thing that I decided to make. nothing special.
 
 #imports
